@@ -37,9 +37,9 @@ lorem-dev-community-jp/
 
 ## 🚀 デモリンク（準備中）
 
-- フロントエンド: https://your-frontend-url/
-- バックエンドAPI: https://your-backend-api-url/
-- Swagger: https://your-swagger-url/
+- フロントエンド: 
+- バックエンドAPI: 
+- Swagger: 
 
 ## 👤 開発担当と役割
 
