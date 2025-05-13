@@ -1,16 +1,8 @@
-# Compiled class file
+# もともと含まれている基本的な設定
 *.class
-
-# Log file
 *.log
-
-# BlueJ files
 *.ctxt
-
-# Mobile Tools for Java (J2ME)
 .mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.nar
@@ -18,7 +10,30 @@
 *.zip
 *.tar.gz
 *.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+# Node.js プロジェクトで無視すべきディレクトリとファイル
+node_modules/
+dist/
+build/
+
+# 環境変数ファイル（機密情報を含む可能性あり）
+.env
+.env.*
+
+# macOSで自動生成される不要なメタファイル
+.DS_Store
+
+# VSCodeの個人用設定フォルダ（任意で無視）
+.vscode/
+
+# npmやyarnによって生成されるログファイル
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 各種IDEが生成するキャッシュ・設定ファイル
+.idea/
+*.iml
+*.swp

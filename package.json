@@ -1,0 +1,26 @@
+{
+  "name": "lorem-dev-community-jp",
+  "version": "1.0.0",
+  "description": "このプロジェクトは、**IT業界に従事している方およびその分野に関心のある方を対象としたコミュニティプラットフォーム**です。  \r ユーザーは新規登録とログインを行い、掲示板に投稿・閲覧することができます。  \r 技術情報の共有、ポートフォリオの紹介、求人情報の提供などを目的として開発されました。",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loremipsum0116/lorem-dev-community-jp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/loremipsum0116/lorem-dev-community-jp/issues"
+  },
+  "homepage": "https://github.com/loremipsum0116/lorem-dev-community-jp#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  }
+}

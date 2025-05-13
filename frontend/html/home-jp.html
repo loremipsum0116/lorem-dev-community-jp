@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ロレム - 世界をよりセマンティックに</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="icon" type="image/png" href="lorem2.png">
+
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.5);
+            background-size: 60% 60%;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+        }
+
+        section.container {
+            margin-top: 200px !important;
+            margin-bottom: 50px;
+        }
+
+        .hero {
+            margin: 0 !important;
+            padding-top: 300px;
+        }
+
+        #kkt:hover {
+            background-color: #E0B800;
+            color: black;
+        }
+
+        .footer-fixed-width {
+            max-width: 1320px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ナビゲーション -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="lorem2_cleaned.png" alt="ロレム ロゴ" width="70" height="30" class="me-0 mb-1">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーション切り替え">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-5">
+                    <li class="nav-item"><a class="nav-link" href="#">Q&A</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">今日の<span style="color: red;">HOT</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">開発トレンド</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">AI／機械学習</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ポートフォリオ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">求人情報</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">自由掲示板</a></li>
+                </ul>
+                <form class="d-flex align-items-center" role="search" style="margin-left: auto; margin-right: -150px;">
+                    <div class="input-group input-group-sm">
+                        <input type="search" class="form-control bg-dark text-white border-secondary rounded-start-pill"
+                            placeholder="検索" aria-label="検索" style="min-height: 30px; width: 150px;">
+                        <button class="btn btn-outline-light border-secondary rounded-end-pill" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="login-jp.html">ログイン</a></li>
+                    <li class="nav-item"><a class="nav-link" href="create-acc-jp.html">新規登録</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ヒーローセクション -->
+    <section class="hero position-relative">
+        <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+        <div class="container custom-offset position-relative">
+            <p class="lead text-start">プログラミング、AI、IT就職に関心のある開発者のための必須コミュニティ</p>
+            <h1 class="display-5 fw-bold text-start mt-4" style="font-family: 'KakaoBigSans-ExtraBold';">
+                世界をより<br>セマンティックに、ロレム</h1>
+            <div class="text-start">
+                <a href="create-acc-jp.html" id="kkt" class="btn btn-lg mt-4 custom-button">
+                    <img src="kakao_logo.png" alt="カカオ ロゴ" width="20" height="20" style="margin-right:3px;">
+                    <span style="font-size: 15px;">カカオで登録</span>
+                </a>
+                <a href="create-acc-jp.html" class="btn btn-lg mt-4 custom-button2" style="margin-left: 10px;">
+                    <span style="font-size: 15px;">メールで登録</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <p class="fw-bold mb-1 text-center">💡 今日の開発クイズ</p>
+        <p class="text-center">JavaScriptにおける <code>==</code> と <code>===</code> の違いは？</p>
+        <div class="text-center">
+            <a href="#" class="btn btn-outline-secondary btn-sm">答えを見る</a>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">🔥 今日の<span style="color: red;">HOT</span></h2>
+            <a href="#" class="text-decoration-underline text-muted small">もっと見る</a>
+        </div>
+        <div id="popularPostsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">ChatGPTでコーディングテスト受けてみた</h5>
+                                    <p class="card-text">GPTに説明したらすぐに解いてくれたｗ</p>
+                                </div>
+                                <div class="card-footer text-muted">閲覧数 1.2K・コメント 45</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">AI面接の質問まとめ（2025年上半期）</h5>
+                                    <p class="card-text">最近よく出る質問をまとめました。</p>
+                                </div>
+                                <div class="card-footer text-muted">閲覧数 860・コメント 21</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pythonベースのプロジェクト提案</h5>
+                                    <p class="card-text">ポートフォリオ向けのおすすめリスト</p>
+                                </div>
+                                <div class="card-footer text-muted">閲覧数 740・コメント 12</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">開発者ポートフォリオ準備ガイド</h5>
+                                    <p class="card-text">採用担当者が好む構成とは？</p>
+                                </div>
+                                <div class="card-footer text-muted">閲覧数 1.4K・コメント 33</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Web開発ロードマップ 2025</h5>
+                                    <p class="card-text">フロントからバックエンドまで段階別解説</p>
+                                </div>
+                                <div class="card-footer text-muted">閲覧数 999・コメント 10</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">コーディングテスト対策のコツ</h5>
+                                    <p class="card-text">時間短縮のテクニックとマインドセット</p>
+                                </div>
+                                <div class="card-footer text-muted">閲覧数 507・コメント 8</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#popularPostsCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#popularPostsCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="alert alert-warning text-center" role="alert">
+            🎉 <strong>2025年上半期 開発者アンケート</strong>に参加してスターバックスクーポンをゲット！ <a href="#" class="alert-link">今すぐ参加 →</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="alert alert-info text-center" role="alert">
+            ✉️ <strong>毎週最新の開発ニュース</strong>をお届けします！ <a href="#" class="alert-link">ニュースレター登録 →</a>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="mb-0">✨ 最新の求人情報</h2>
+            <a href="#" class="text-decoration-underline text-muted small">もっと見る</a>
+        </div>
+        <div id="hotJobsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">バックエンド開発者（Spring）</h5>
+                                    <p class="card-text">新規プラットフォームの開発（未経験〜3年歓迎）</p>
+                                </div>
+                                <div class="card-footer text-muted">勤務地：ソウル・年収 420万円</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">AIモデリングエンジニア</h5>
+                                    <p class="card-text">ディープラーニングによる推薦システム構築経験者 優遇</p>
+                                </div>
+                                <div class="card-footer text-muted">勤務地：板橋・年収 550万円</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">フロントエンド開発者（React）</h5>
+                                    <p class="card-text">SPA構造の理解必須、Gitでの協業経験がある方</p>
+                                </div>
+                                <div class="card-footer text-muted">勤務地：リモート・年収 応相談</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">DevOpsエンジニア</h5>
+                                    <p class="card-text">CI/CDパイプラインの構築経験者 優遇</p>
+                                </div>
+                                <div class="card-footer text-muted">勤務地：釜山・年収 500万円</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">データアナリスト</h5>
+                                    <p class="card-text">Python・SQL・Tableauに習熟している方</p>
+                                </div>
+                                <div class="card-footer text-muted">勤務地：江南・年収 480万円</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="card post-card h-100 fixed-card">
+                                <div class="card-body">
+                                    <h5 class="card-title">モバイルアプリ開発者（Flutter）</h5>
+                                    <p class="card-text">ハイブリッドアプリの開発経験者 優遇</p>
+                                </div>
+                                <div class="card-footer text-muted">勤務地：大田・年収 応相談</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#hotJobsCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hotJobsCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+    </div>
+    </section>
+
+    <div class="container">
+        <div class="alert alert-primary text-center" role="alert">
+            💼 <strong>ロレムソフト 新卒バックエンド開発者募集中</strong>！ <a href="#" class="alert-link">求人情報を見る →</a>
+        </div>
+    </div>
+
+    <section class="container">
+        <h2 class="mb-4">🗂️ 掲示板ショートカット</h2>
+        <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action">💻 開発トレンド</a>
+            <a href="#" class="list-group-item list-group-item-action">🧠 AI／機械学習</a>
+            <a href="#" class="list-group-item list-group-item-action">📂 ポートフォリオ</a>
+            <a href="#" class="list-group-item list-group-item-action">💼 求人情報</a>
+            <a href="#" class="list-group-item list-group-item-action">☕ 自由掲示板</a>
+        </div>
+    </section>
+
+    <footer class="bg-light border-top py-4 mt-5">
+        <div class="footer-fixed-width mx-auto">
+            <div class="row align-items-start">
+                <div class="col-md-3 mb-3">
+                    <img src="lorem_bw.png" alt="ロレム ロゴ" width="120">
+                    <p class="text-muted mt-2">All That Developer</p>
+                    <div class="d-flex gap-3">
+                        <a href="#"><i class="bi bi-facebook fs-5 text-secondary"></i></a>
+                        <a href="#"><i class="bi bi-youtube fs-5 text-secondary"></i></a>
+                        <a href="#"><i class="bi bi-envelope fs-5 text-secondary"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="d-flex flex-wrap gap-3 mb-2">
+                        <a href="#" class="text-muted small text-decoration-none">会社紹介</a>
+                        <a href="#" class="text-muted small text-decoration-none">お知らせ</a>
+                        <a href="#" class="text-muted small text-decoration-none">カスタマーサポート</a>
+                        <a href="#" class="text-muted small text-decoration-none">広告について</a>
+                        <a href="#" class="text-muted small text-decoration-none">運営ポリシー</a>
+                        <a href="#" class="text-muted small text-decoration-none fw-bold">個人情報保護方針</a>
+                        <a href="#" class="text-muted small text-decoration-none">利用規約</a>
+                    </div>
+                    <p class="text-muted small mb-1">商号：<b>ロレムソフト株式会社</b>｜代表者名：<b>シム・ヒョンソク</b></p>
+                    <p class="text-muted small mb-1">事業者登録番号：123-45-67890｜通信販売業申告番号：2025-ソウル江南-0000号</p>
+                    <p class="text-muted small mb-1">住所：忠清北道清州市西原区成和洞123 1階（06103）｜メール：sst7050@naver.com</p>
+                    <p class="text-muted small">© 2025 Lorem Project. All rights reserved.</p>
+                </div>
+                <div class="col-md-3 text-md-end">
+                    <p class="text-muted small mb-2">SPONSORED BY</p>
+                    <div class="d-flex justify-content-md-end gap-3">
+                        <img src="sponsor1.png" alt="sponsor1" height="30">
+                        <img src="sponsor2.png" alt="sponsor2" height="30">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <style>
+        .footer-fixed-width {
+            max-width: 1320px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    </style>
+
+
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
