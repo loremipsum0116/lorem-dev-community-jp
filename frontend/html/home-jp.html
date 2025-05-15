@@ -90,7 +90,8 @@
         <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
         <div class="container custom-offset position-relative mt-2">
             <p class="lead text-start" style="font-size: 25px;">プログラミング、AI、IT就職に関心のある開発者のための必須コミュニティ</p>
-            <h1 class="display-5 fw-bold text-start mt-4" style="font-family: 'KakaoBigSans-ExtraBold'; font-size: 60px">
+            <h1 class="display-5 fw-bold text-start mt-4"
+                style="font-family: 'KakaoBigSans-ExtraBold'; font-size: 60px">
                 世界をより<br>セマンティックに、ロレム</h1>
             <div class="text-start">
                 <a href="create-acc-jp.html" id="kkt" class="btn btn-lg mt-4 custom-button">
@@ -210,8 +211,10 @@
             <h2 class="mb-0">✨ 最新の求人情報</h2>
             <a href="#" class="text-decoration-underline text-muted small">もっと見る</a>
         </div>
+
         <div id="hotJobsCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
+                <!-- 첫 번째 슬라이드 -->
                 <div class="carousel-item active">
                     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
                         <div class="col-lg-3">
@@ -243,6 +246,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- 두 번째 슬라이드 -->
                 <div class="carousel-item">
                     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
                         <div class="col-lg-3">
@@ -275,17 +280,22 @@
                     </div>
                 </div>
             </div>
+
+            <!-- 슬라이드 버튼 -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#hotJobsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">前へ</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hotJobsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">次へ</span>
+            </button>
         </div>
     </section>
 
-    <button class="carousel-control-prev" type="button" data-bs-target="#hotJobsCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#hotJobsCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-    </button>
-    </div>
-    </section>
+
+
+
 
     <div class="container">
         <div class="alert alert-primary text-center" role="alert">
