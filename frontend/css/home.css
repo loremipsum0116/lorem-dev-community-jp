@@ -5,8 +5,8 @@ body {
 
 .hero {
     color: white;
-    padding-top: 300px;
-    padding-bottom: 300px;
+    padding-top: 500px;
+    padding-bottom: 500px;
     text-align: center;
     background-image: url('../html/home_bg.png');
     background-size: cover;
